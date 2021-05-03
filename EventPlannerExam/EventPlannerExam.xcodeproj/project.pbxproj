@@ -21,6 +21,8 @@
 		0DF07E1C263C56CD001E935B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DF07E1B263C56CD001E935B /* Assets.xcassets */; };
 		0DF07E1F263C56CD001E935B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DF07E1D263C56CD001E935B /* LaunchScreen.storyboard */; };
 		0DF07E30263C5830001E935B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF07E2F263C5830001E935B /* CoreDataStack.swift */; };
+		0DF09FD8263E5A9B00BC82B7 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF09FD7263E5A9B00BC82B7 /* NotificationScheduler.swift */; };
+		0DF09FDA263F55CE00BC82B7 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF09FD9263F55CE00BC82B7 /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		0DF07E1E263C56CD001E935B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DF07E20263C56CD001E935B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DF07E2F263C5830001E935B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0DF09FD7263E5A9B00BC82B7 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		0DF09FD9263F55CE00BC82B7 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				0DF07E0F263C56CC001E935B /* AppDelegate.swift */,
 				0DF07E11263C56CC001E935B /* SceneDelegate.swift */,
 				0DF07E20263C56CD001E935B /* Info.plist */,
+				0DF09FD7263E5A9B00BC82B7 /* NotificationScheduler.swift */,
+				0DF09FD9263F55CE00BC82B7 /* Strings.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -245,8 +251,10 @@
 				0D5DDB7B263C653D00F9FF2D /* AttendDate+Convenience.swift in Sources */,
 				0D5DDB77263C611800F9FF2D /* EventListTableViewController.swift in Sources */,
 				0D5DDB79263C612B00F9FF2D /* EventDetailViewController.swift in Sources */,
+				0DF09FD8263E5A9B00BC82B7 /* NotificationScheduler.swift in Sources */,
 				0D5DDB7D263C67CE00F9FF2D /* Event+Convenience.swift in Sources */,
 				0D5DDB80263C73C500F9FF2D /* DateFormatter.swift in Sources */,
+				0DF09FDA263F55CE00BC82B7 /* Strings.swift in Sources */,
 				0DF07E1A263C56CC001E935B /* EventPlannerExam.xcdatamodeld in Sources */,
 				0D5DDB6E263C5A6E00F9FF2D /* EventController.swift in Sources */,
 				0D5DDB73263C60B200F9FF2D /* EventTableViewCell.swift in Sources */,

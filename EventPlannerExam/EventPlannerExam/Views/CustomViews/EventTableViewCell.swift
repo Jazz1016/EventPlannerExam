@@ -44,7 +44,7 @@ class EventTableViewCell: UITableViewCell {
         
         eventNameTextLabel.text = event.eventName
         
-            eventDateLabel.text = DateFormatter.eventTime.string(from: event.eventDate ?? Date())
+        eventDateLabel.text = DateFormatter.eventTime.string(from: event.eventDate ?? Date())
         
         let image = didAttendToday ? UIImage(systemName: "checkmark.square") : UIImage(systemName: "square")
         eventAttendButton.setImage(image, for: .normal)

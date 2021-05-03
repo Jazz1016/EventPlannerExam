@@ -16,7 +16,14 @@ class EventListTableViewController: UITableViewController {
         tableView.delegate = self
         tableView.dataSource = self
         EventController.shared.fetchAllEvents()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationFired), name: Notification.Name(Strings.reminderReceivedNotificationName), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableView), name: UIApplication.didBecomeActiveNotification, object: nil)
 
+        
+        
+        tableView.reloadData()
         
     }
     
@@ -29,6 +36,19 @@ class EventListTableViewController: UITableViewController {
     
 //    var event: Event
     
+    // MARK: - Functions
+    
+    @objc func notificationFired(){
+        self.tableView.backgroundColor = .orange
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            self.tableView.backgroundColor = .systemBackground
+            self.view.backgroundColor = .systemBackground
+        }
+    }
+    
+    @objc func reloadTableView() {
+        tableView.reloadData()
+    }
 
     // MARK: - Table view data source
 
@@ -65,7 +85,6 @@ class EventListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
         if section == 0 {
             return "Events"
         } else if section == 1 {
@@ -87,8 +106,6 @@ class EventListTableViewController: UITableViewController {
             
             destinationVC.event = event
         }
-        
-        
     }
 }
 
@@ -99,5 +116,3 @@ extension EventListTableViewController: EventCellDelegate {
         tableView.reloadData()
     }
 }
-
-// JAMLEA: BUILD DELEGATE EXTENSION
